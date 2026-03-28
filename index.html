@@ -11,31 +11,51 @@ body {
     margin: 0;
     background: #f5f5f5;
 }
+
+/* HEADER STYLE */
 header {
-    background: #ff6600;
+    background: linear-gradient(45deg, #ff6600, #ff3300);
     color: white;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: yellow;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
 nav {
     background: #333;
     padding: 10px;
     text-align: center;
 }
+
 nav a {
     color: white; 
     margin: 10px;
     text-decoration: none;
 }
+
 section {
     padding: 20px;
     background: white;
     margin: 10px;
     border-radius: 10px;
 }
+
 h2 {
     color: #ff6600;
 }
+
 .btn {
     display: inline-block;
     padding: 10px 15px;
@@ -44,6 +64,7 @@ h2 {
     text-decoration: none;
     border-radius: 5px;
 }
+
 footer {
     background: #333;
     color: white;
@@ -57,7 +78,7 @@ footer {
 <body>
 
 <header>
-    <h1>Swastik Enterprises</h1>
+    <h1 class="logo">SWASTIK <span>ENTERPRISES</span></h1>
     <p>Aaple Seva Sarkar Kendra</p>
 </header>
 
@@ -72,31 +93,39 @@ footer {
     <h2>Welcome</h2>
     <p>All Online Government Services Available</p>
 
-    <!-- IMAGE GALLERY -->
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; padding:10px;">
+    <div style="display:flex; gap:20px; flex-wrap:wrap;">
 
-      <img src="banner.jpg" style="width:100%; height:150px; object-fit:cover;">
-      <img src="banner1.jpg" style="width:100%; height:150px; object-fit:cover;">
-      <img src="banner2.jpg" style="width:100%; height:150px; object-fit:cover;">
-      <img src="banner4.jpg" style="width:100%; height:150px; object-fit:cover;">
+        <!-- LEFT SIDE SERVICES -->
+        <div style="flex:1; min-width:250px;">
+            <ul>
+                <li>PAN Card</li>
+                <li>Voting Card</li>
+                <li>E-Shram Card</li>
+                <li>ABHA Card</li>
+                <li>Ayushman Card</li>
+                <li>Shop Licence (Gumasta)</li>
+                <li>Udyam Aadhaar</li>
+                <li>Food Licence</li>
+                <li>Passport Service</li>
+                <li>Police Verification (PCC)</li>
+                <li>Rent Agreement</li>
+                <li>Bill Payment</li>
+                <li>Online Forms</li>
+            </ul>
+        </div>
+
+        <!-- RIGHT SIDE IMAGES -->
+        <div style="flex:1; min-width:250px; display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+
+            <img src="banner.jpg" style="width:100%; height:120px; object-fit:cover;">
+            <img src="banner1.jpg" style="width:100%; height:120px; object-fit:cover;">
+            <img src="banner4.jpg" style="width:100%; height:120px; object-fit:cover;">
+
+        </div>
 
     </div>
 
-    <ul>
-        <li>PAN Card</li>
-        <li>Voting Card</li>
-        <li>E-Shram Card</li>
-        <li>ABHA Card</li>
-        <li>Ayushman Card</li>
-        <li>Shop Licence (Gumasta)</li>
-        <li>Udyam Aadhaar</li>
-        <li>Food Licence</li>
-        <li>Passport Service</li>
-        <li>Police Verification (PCC)</li>
-        <li>Rent Agreement</li>
-        <li>Bill Payment</li>
-        <li>Online Forms (CET, RRB, Police Bharti)</li>
-    </ul>
+    <br>
 
     <a class="btn" href="https://wa.me/918451012454">Chat on WhatsApp</a>
 </section>
